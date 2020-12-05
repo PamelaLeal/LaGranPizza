@@ -3,6 +3,7 @@ package pizzas;
 public class Menu{
 	
 	public void menu() {
+		//Menú de la pizzería
 		System.out.println("Menú \n *Pizza Chicago: Queso, carne especial\n"
 				+ "*Pizza Hawaii: Queso, piña, carne\n "
 				+ "*Pizza Mexicana: Queso, carne, cebolla\n"
@@ -12,9 +13,13 @@ public class Menu{
 	
 	public String estado(String pedido) {
 		
+		//Se muestra en pantalla el estado del pedido solicitado
 		System.out.println("Estado: En pedido  ");
+		//Este delay marca el tiempo que debe tardar para mostrar el siguiente mensaje
 		delay(1000);
 		System.out.println("Estado: En armado  ");
+		
+		//Condición para mostrar los ingredientes dependiendo de la pizza
 		
 		if(pedido.equalsIgnoreCase("hawaii")) 
 		{
@@ -46,6 +51,8 @@ public class Menu{
 		delay(1000);
 		return pedido;
 	}
+	
+	//Metodo para hacer funcionar el delay
 
 	private void delay(long milis)
 	{
