@@ -1,10 +1,20 @@
 package pizzas;
 
+import java.util.ArrayList;
+
 public class Pizza {
-	private String nombrePizza;
-	private String ingrediente1;
-	private String ingrediente2;
-	private String ingrediente3;
+	private static String nombrePizza;
+	private static String ingrediente1;
+	private static String ingrediente2;
+	private static String ingrediente3;
+	private static int CantidadPizza;
+	
+	
+	static ArrayList<String> ArrayPizza = new ArrayList();
+	static ArrayList<String> ArrayIngrediente1 = new ArrayList();
+	static ArrayList<String> ArrayIngrediente2 = new ArrayList();
+	static ArrayList<String> ArrayIngrediente3 = new ArrayList();
+	
 	
 	Pizza(){
 		nombrePizza=" ";
@@ -13,21 +23,26 @@ public class Pizza {
 		ingrediente3= " ";
 	}
 	
-	private void setNombrePizza(String nomPizza) {
+	
+	protected static void setNombrePizza(String nomPizza) {
 		nombrePizza= nomPizza;
+		ArrayPizza.add(nomPizza);
 	}
 	
 	
-	private void setIgrediente1(String ing1) {
+	protected static void setIngrediente1(String ing1) {
 		ingrediente1= ing1;
+		ArrayIngrediente1.add( ingrediente1);
 	}
 	
-	private void setIgrediente2(String ing2) {
+	protected static void setIngrediente2(String ing2) {
 		ingrediente2= ing2;
+		ArrayIngrediente2.add( ingrediente2);
 	}
 	
-	private void setIgrediente3(String ing3) {
+	protected static void setIngrediente3(String ing3) {
 		ingrediente3= ing3;
+		ArrayIngrediente3.add( ingrediente3);
 	}
 	
 	String getIngrediente1() {
@@ -49,5 +64,7 @@ public class Pizza {
 		return nombrePizza;
 		
 	}
+	
+	
 
 }

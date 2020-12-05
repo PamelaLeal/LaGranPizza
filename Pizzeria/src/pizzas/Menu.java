@@ -2,9 +2,12 @@ package pizzas;
 
 public class Menu{
 	
+	Pizza pizza = new Pizza();
+	
 	public void menu() {
 		//Menú de la pizzería
-		System.out.println("Menú \n *Pizza Chicago: Queso, carne especial\n"
+		
+		System.out.println("Menú \n*Pizza Chicago: Queso, carne especial, jalapeño\n"
 				+ "*Pizza Hawaii: Queso, piña, carne\n "
 				+ "*Pizza Mexicana: Queso, carne, cebolla\n"
 				+ "*Pizza clasica: Queso, cane,  peperoni ");
