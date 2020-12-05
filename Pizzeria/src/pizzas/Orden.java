@@ -43,6 +43,7 @@ public class Orden {
 					 res= "si";
 				 }
 				 
+				 //ciclo para repetir la orden si se quiere hacer otra
 			 }while(res.equalsIgnoreCase("si"));
 			 
 			 System.out.println("Gracias por comer aquí, vuelva pronto");

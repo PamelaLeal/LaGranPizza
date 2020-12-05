@@ -9,7 +9,7 @@ public class Pizza {
 	private static String ingrediente3;
 	private static int CantidadPizza;
 	
-	
+	//Arrays para guardar las pizzas y sus ingrdientes
 	static ArrayList<String> ArrayPizza = new ArrayList();
 	static ArrayList<String> ArrayIngrediente1 = new ArrayList();
 	static ArrayList<String> ArrayIngrediente2 = new ArrayList();

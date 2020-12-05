@@ -14,6 +14,8 @@ public class Menu{
 		
 	}
 	
+	//metodo estado que recibe como parametro el pedido que realizo el cliente
+	
 	public String estado(String pedido) {
 		
 		//Se muestra en pantalla el estado del pedido solicitado
